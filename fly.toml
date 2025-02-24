@@ -1,0 +1,15 @@
+app = "meu-bot-telegram"
+
+[build]
+  image = "python:3.12"
+
+[env]
+  TELEGRAM_BOT_TOKEN = "8137423982:AAFhhOIqmnINIpJb8ayxjKUGciWI7TUOnC0"
+  TOTP_SECRET = "Z6H3K7T2AIVBHIFW7GYHR66EGL3XABWT"
+  OWNER_ID = "510738503"
+  ADMIN_ID = "510738503"
+
+[services]
+  [[services.ports]]
+    handlers = ["http"]
+    port = 8000

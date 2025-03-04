@@ -40,6 +40,7 @@ def start(update: Update, context: CallbackContext):
     update.message.reply_text(
         f"👋 Olá! Seu ID é `{user_id}`.\n\n"
         "Use `/codigo` para gerar um código 2FA (se permitido).\n"
+        "Caso você não esteja autorizado, basta mandar seu ID para o dono do rateio"
         "Admin pode usar:\n"
         "🔹 `/autorizar ID_DO_USUARIO`\n"
         "🔹 `/remover ID_DO_USUARIO`\n"
